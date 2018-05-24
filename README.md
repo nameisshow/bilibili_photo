@@ -1,2 +1,2 @@
 # bilibili_photo
-get bilibili photo
+get bilibili photo (learn curl)
