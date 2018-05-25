@@ -113,6 +113,8 @@
                     }
                 }
 
+                //后期加上代理
+                //TODO
                 sleep(3);
             }
         }
@@ -143,7 +145,7 @@
 
             $this->toLog(__FUNCTION__);
 
-            //$this->toInsert('up',$user);
+            $this->toInsert('up',$user);
             $this->toInsert('photo',$photo);
         }
 
@@ -153,9 +155,9 @@
             $this->toLog($table.'--start');
 
             if($table == 'up'){
-                //$this->getUserArray();
+                $this->getUserArray();
             }else if($table == 'photo'){
-                //$this->getPhotoArray();
+                $this->getPhotoArray();
             }
             try {
                 $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
